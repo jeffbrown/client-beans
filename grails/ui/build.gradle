@@ -27,6 +27,7 @@ apply plugin:"org.grails.grails-gsp"
 repositories {
     mavenLocal()
     maven { url "https://repo.grails.org/grails/core" }
+    jcenter()
 }
 
 dependencies {
@@ -64,9 +65,10 @@ dependencies {
     testRuntime "org.seleniumhq.selenium:selenium-remote-driver:3.6.0"
     testRuntime "org.seleniumhq.selenium:selenium-api:3.6.0"
 
-    compile 'io.micronaut:inject-java:1.0.0-SNAPSHOT'
-    compile 'io.micronaut:discovery-client:1.0.0-SNAPSHOT'
-    compile 'io.micronaut:spring:1.0.0-SNAPSHOT'
+    compile 'io.micronaut:inject-java:1.0.0.M1'
+    compile 'io.micronaut:discovery-client:1.0.0.M1'
+    compile 'io.micronaut:spring:1.0.0.M1'
+    runtime 'io.micronaut:runtime:1.0.0.M1'
 }
 
 bootRun {

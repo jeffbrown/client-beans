@@ -3,6 +3,7 @@ consul:
     client:
         config:
             enabled: true
+        defaultZone: "localhost:8500"
 ---
 grails:
     profile: web
