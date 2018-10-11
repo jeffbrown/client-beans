@@ -65,10 +65,10 @@ dependencies {
     testRuntime "org.seleniumhq.selenium:selenium-remote-driver:3.6.0"
     testRuntime "org.seleniumhq.selenium:selenium-api:3.6.0"
 
-    compile 'io.micronaut:inject-java:1.0.0.M1'
-    compile 'io.micronaut:discovery-client:1.0.0.M1'
-    compile 'io.micronaut:spring:1.0.0.M1'
-    runtime 'io.micronaut:runtime:1.0.0.M1'
+    compile 'io.micronaut:discovery-client:1.0.0.RC2'
+    compile "io.micronaut:inject-java:1.0.0.RC2"
+    runtime 'org.grails.plugins:micronaut-beans:1.0.0.BUILD-SNAPSHOT'
+
 }
 
 bootRun {
